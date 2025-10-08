@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – Elias Boinali | EPITA</title>
+  <meta name="description" content="Portfolio professionnel EPITA – Elias Boinali. Présentation, parcours, projets, compétences, et contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EB</div>
+        <div class="brand-text">
+          <span class="brand-name">Elias Boinali</span>
+          <span class="brand-sub">EPITA – Cycle Prépa S3</span>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="navMenu">
+          <li><a href="#accueil" class="nav-link"><i class="fas fa-home" aria-hidden="true"></i> <span>Accueil</span></a></li>
+          <li><a href="#parcours" class="nav-link"><i class="fas fa-graduation-cap" aria-hidden="true"></i> <span>Parcours</span></a></li>
+          <li><a href="#projets" class="nav-link"><i class="fas fa-code" aria-hidden="true"></i> <span>Projets</span></a></li>
+          <li><a href="#competences" class="nav-link"><i class="fas fa-cogs" aria-hidden="true"></i> <span>Compétences</span></a></li>
+          <li><a href="#contact" class="nav-link"><i class="fas fa-envelope" aria-hidden="true"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème" title="Basculer le thème">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Accueil / Introduction -->
+    <section id="accueil" class="section hero reveal" aria-labelledby="accueil-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="accueil-title">Étudiant EPITA – futur ingénieur en cybersécurité</h1>
+          <p class="lead">Etudiant en 2ᵉ année du cycle préparatoire à l’EPITA Toulouse, je suis motivé par les défis techniques et humains de la cybersécurité.</p>
+          <p>J’ai choisi l’EPITA pour son excellence et sa spécialisation en informatique, reconnue en France et à l’international. Mon objectif est de devenir ingénieur en cybersécurité, au cœur des enjeux du numérique.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+            <a class="btn btn-outline" href="#contact">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero-photo placeholder-photo" aria-label="Espace réservé pour la photo">
+          <div class="photo-frame">
+            <span>Photo à venir</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours académique / Formation -->
+    <section id="parcours" class="section reveal" aria-labelledby="parcours-title">
+      <div class="container">
+        <h2 id="parcours-title" class="section-title">Parcours académique</h2>
+        <div class="cards two-cols">
+          <article class="card">
+            <h3>Formation</h3>
+            <ul class="checklist">
+              <li>Bac général – spécialités Mathématiques et NSI</li>
+              <li>EPITA Toulouse – 2ᵉ année du cycle préparatoire</li>
+              <li>Principales matières : mathématiques, algorithmique, programmation</li>
+              <li>Apprentissage par projets, approche concrète et professionnalisante</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Objectifs académiques</h3>
+            <p>Approfondir mes bases techniques et méthodologiques en informatique pour préparer la spécialisation en cybersécurité, en développant avant tout ma curiosité, ma capacité à explorer de nouvelles technologies et ma compréhension globale des systèmes informatiques.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="section reveal" aria-labelledby="projets-title">
+      <div class="container">
+        <h2 id="projets-title" class="section-title">Projets réalisés</h2>
+        <div class="project-list">
+          <article class="project-card" data-modal-target="modal-project1" tabindex="0" role="button" aria-label="Ouvrir les détails du projet Jeu vidéo en C#">
+            <figure class="project-cover">
+              <img src="assets/game-cover.png" alt="Couverture du projet Jeu vidéo en C#">
+            </figure>
+            <div class="project-header">
+              <h3>Operation Mona Lisa</h3>
+              <span class="tag">C#</span><span class="tag">Unity</span><span class="tag">Git</span>
+            </div>
+            <p class="project-desc">Projet de groupe à l’EPITA visant à concevoir un jeu complet en C#.</p>
+              <ul class="bullets">
+                <li>Rôle : conception du gameplay et de l'intelligence artificielle</li>
+                <li>Technologies : C#, Git, Unity</li>
+                <li>Difficultés : Première expérience en C# avec développement d'une IA et d'un mode multijoueur, impliquant la gestion de la synchronisation réseau</li>
+                <li>Apports : gestion du code collaboratif, organisation d'équipe</li>
+              </ul>
+            <div class="project-actions"><button class="btn btn-outline open-project" data-modal-target="modal-project1">Détails</button></div>
+          </article>
+
+          <article class="project-card" data-modal-target="modal-project2" tabindex="0" role="button" aria-label="Ouvrir les détails du projet Détecteur de mots">
+            <figure class="project-cover">
+              <img src="assets/wordsearch.png" alt="Couverture du projet Détecteur de mots en C">
+            </figure>
+              <div class="project-header">
+                <h3>Recherche dans un mot mêlé<br>(en cours)</h3>
+                <span class="tag">C</span><span class="tag">Traitement d'image</span><span class="tag">OCR</span>
+              </div>
+            <p class="project-desc">Analyse d'une image de mot mêlé et détection des mots via un réseau de neurones.</p>
+            <ul class="bullets">
+              <li>Rôle : Développement en C d’un module de détection et découpe automatique de la grille pour extraire les lettres et identifier les mots à chercher via l’OCR</li>
+              <li>Technologies : C, binarisation, filtrage, OCR</li>
+              <li>Difficultés : reconnaissance des caractères, optimisation des performances</li>
+              <li>Apports : logique algorithmique renforcée, pratique avancée du C</li>
+            </ul>
+            <div class="project-actions"><button class="btn btn-outline open-project" data-modal-target="modal-project2">Détails</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expérience professionnelle -->
+    <section id="experience" class="section reveal" aria-labelledby="experience-title">
+      <div class="container">
+        <h2 id="experience-title" class="section-title">Expérience professionnelle</h2>
+        <div class="cards one-col">
+          <article class="card">
+            <h3>Agent de collecte (rippeur) – Toulouse Métropole</h3>
+            <ul class="bullets">
+              <li>Missions : collecte des déchets, respect des consignes de sécurité, coordination d’équipe</li>
+              <li>Enseignements : rigueur, ponctualité, travail d’équipe, respect des horaires</li>
+              <li>Une expérience humaine enrichissante, source de discipline et de coopération</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="section reveal" aria-labelledby="competences-title">
+      <div class="container">
+        <h2 id="competences-title" class="section-title">Compétences</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Hard skills</h3>
+            <ul class="checklist">
+              <li>Langages : C, Python, C#, HTML/CSS, assembleur (bases)</li>
+              <li>Outils : Git, VSCode, Linux (WSL), Unity</li>
+              <li>Méthodes : gestion de projet, débogage, lecture de documentation technique</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Soft skills</h3>
+            <ul class="checklist">
+              <li>Autonomie, curiosité, communication</li>
+              <li>Adaptation rapide à différents environnements techniques</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Points forts clés</h3>
+            <ul class="checklist">
+              <li>Algorithmique et programmation C#</li>
+              <li>Travail en équipe et gestion de projet</li>
+              <li>Curiosité et apprentissage autonome</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ouverture et perspectives -->
+    <section id="ouverture" class="section reveal" aria-labelledby="ouverture-title">
+      <div class="container">
+        <h2 id="ouverture-title" class="section-title">Ouverture et perspectives</h2>
+        <div class="cards one-col">
+          <article class="card">
+            <p>Je m’intéresse particulièrement à la cybersécurité : audit, défense et tests d’intrusion. Mon objectif est d’intégrer la majeure <strong>SRS</strong> (Systèmes, Réseaux et Sécurité) au cycle ingénieur de l’EPITA, pour contribuer à la protection des systèmes et des données.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="section reveal" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-title" class="section-title">Contact</h2>
+          <p>Vous pouvez me joindre via ce formulaire. Un client mail s’ouvrira avec votre message.</p>
+          <form class="contact-form" action="mailto:elias.boinali@epita.fr" method="POST" enctype="text/plain">
+            <div class="form-field">
+              <label for="name">Nom</label>
+              <input id="name" name="Nom" type="text" placeholder="Votre nom" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="Email" type="email" placeholder="vous@example.com" required>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" rows="5" placeholder="Votre message" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+              <button type="reset" class="btn btn-ghost">Effacer</button>
+            </div>
+          </form>
+        </div>
+        <aside class="contact-aside">
+          <div class="info-box">
+            <h3>Informations</h3>
+            <ul class="info-list">
+              <li><strong>Ville</strong> : Toulouse</li>
+              <li><strong>École</strong> : EPITA Toulouse</li>
+              <li><strong>Objectif</strong> : Ingénieur en cybersécurité</li>
+              <li><strong>Email</strong> : elias.boinali@epita.fr</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals: project details with gallery -->
+  <div class="modal" id="modal-project1" aria-hidden="true" aria-labelledby="modal-project1-title" role="dialog">
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" aria-label="Fermer">×</button>
+      <h3 id="modal-project1-title">Jeu vidéo en C# (S1/S2)</h3>
+      <p>Projet de groupe réalisé à l’EPITA. Conception du gameplay et de l’IA, gestion du versioning avec Git, intégration et tests sous Unity.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-main">
+          <img src="assets/game-screenshot-1.png" alt="Capture du gameplay" />
+        </div>
+        <div class="gallery-thumbs">
+          <img class="is-active" src="assets/game-screenshot-1.png" alt="Miniature gameplay" data-full="assets/game-screenshot-1.png">
+          <img src="assets/game-screenshot-2.png" alt="Miniature environnement" data-full="assets/game-screenshot-2.png">
+          <img src="assets/game-screenshot-3.png" alt="Miniature interface" data-full="assets/game-screenshot-3.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-project2" aria-hidden="true" aria-labelledby="modal-project2-title" role="dialog">
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" aria-label="Fermer">×</button>
+      <h3 id="modal-project2-title">Recherche dans un mot mêlé</h3>
+      <p>Analyse d’image, binarisation et OCR en C pour détecter des mots dans une grille. Optimisations algorithmiques et gestion de la précision.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery-main">
+          <img src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%2300509e'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='30' fill='white'>Capture 2 – Binarisation</text></svg>" alt="Capture de la binarisation" />
+        </div>
+        <div class="gallery-thumbs">
+          <img class="is-active" src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='220' height='120'><rect width='100%' height='100%' fill='%2300509e'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='12' fill='white'>Binarisation</text></svg>" alt="Miniature binarisation" data-full="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%2300509e'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='30' fill='white'>Capture 2 – Binarisation</text></svg>">
+          <img src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='220' height='120'><rect width='100%' height='100%' fill='%235b6675'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='12' fill='white'>Résultats</text></svg>" alt="Miniature résultats" data-full="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%235b6675'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='30' fill='white'>Capture 3 – Résultats</text></svg>">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Elias Boinali – Portfolio EPITA.</p>
+      <a class="to-top" href="#accueil" aria-label="Revenir en haut"><i class="fas fa-arrow-up" aria-hidden="true"></i> <span>Haut</span></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
