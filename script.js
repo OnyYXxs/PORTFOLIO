@@ -134,30 +134,25 @@ document.querySelectorAll('[data-gallery]').forEach(gallery => {
   const thumbs = gallery.querySelectorAll('.gallery-thumbs img');
   const mainCaption = gallery.querySelector('.gallery-main figcaption');
 
-  // Récupère toutes les légendes des miniatures
-  const thumbCaptions = Array.from(
-    gallery.querySelectorAll('.gallery-thumbs figure figcaption')
-  ).map(caption => caption.textContent.trim());
-
-  thumbs.forEach((thumb, i) => {
+  thumbs.forEach(thumb => {
     thumb.addEventListener('click', () => {
       // Réinitialise les miniatures actives
       thumbs.forEach(t => t.classList.remove('is-active'));
-
-      // Active la miniature cliquée
       thumb.classList.add('is-active');
 
       // Change l'image principale
       const fullSrc = thumb.dataset.full;
       if (fullSrc) mainImg.src = fullSrc;
 
-      // Met à jour la légende principale
-      if (mainCaption && thumbCaptions[i]) {
-        mainCaption.textContent = thumbCaptions[i];
+      // Met à jour la légende principale à partir du data-caption
+      if (mainCaption && thumb.dataset.caption) {
+        mainCaption.textContent = thumb.dataset.caption;
       }
     });
   });
 });
+
+
 
 
 
