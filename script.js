@@ -128,19 +128,36 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// Gallery logic
+// === Galerie interactive pour le projet mot mêlé ===
 document.querySelectorAll('[data-gallery]').forEach(gallery => {
   const mainImg = gallery.querySelector('.gallery-main img');
   const thumbs = gallery.querySelectorAll('.gallery-thumbs img');
-  thumbs.forEach(thumb => {
+  const mainCaption = gallery.querySelector('.gallery-main figcaption');
+
+  // Récupère toutes les légendes des miniatures
+  const thumbCaptions = Array.from(
+    gallery.querySelectorAll('.gallery-thumbs figure figcaption')
+  ).map(caption => caption.textContent.trim());
+
+  thumbs.forEach((thumb, i) => {
     thumb.addEventListener('click', () => {
+      // Réinitialise les miniatures actives
       thumbs.forEach(t => t.classList.remove('is-active'));
+
+      // Active la miniature cliquée
       thumb.classList.add('is-active');
-      const fullSrc = thumb.getAttribute('data-full');
-      if (fullSrc) mainImg.setAttribute('src', fullSrc);
-      const alt = thumb.getAttribute('alt') || '';
-      mainImg.setAttribute('alt', `Agrandie: ${alt}`);
+
+      // Change l'image principale
+      const fullSrc = thumb.dataset.full;
+      if (fullSrc) mainImg.src = fullSrc;
+
+      // Met à jour la légende principale
+      if (mainCaption && thumbCaptions[i]) {
+        mainCaption.textContent = thumbCaptions[i];
+      }
     });
   });
 });
+
+
 
