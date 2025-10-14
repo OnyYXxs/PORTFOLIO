@@ -254,13 +254,22 @@
       <h3 id="modal-project2-title">Recherche dans un mot mêlé</h3>
       <p>Analyse d’image, binarisation et OCR en C pour détecter des mots dans une grille. Optimisations algorithmiques et gestion de la précision.</p>
       <div class="gallery" data-gallery>
-        <div class="gallery-main">
-          <img src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%2300509e'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='30' fill='white'>Capture 2 – Binarisation</text></svg>" alt="Capture de la binarisation" />
+        <div class="gallery" data-gallery>
+          <div class="gallery-main">
+            <img src="assets/level_1_image_1.png" alt="Capture originale du mot mêlé" />
+          </div>
+          <div class="gallery-thumbs">
+            <img class="is-active"
+                 src="assets/level_1_image_1.png"
+                 alt="Miniature image originale"
+                 data-full="assets/level_1_image_1.png">
+            <img
+                 src="assets/level_1_image_binarized.png"
+                 alt="Miniature image binarisée"
+                 data-full="assets/level_1_image_binarized.png">
+          </div>
         </div>
-        <div class="gallery-thumbs">
-          <img class="is-active" src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='220' height='120'><rect width='100%' height='100%' fill='%2300509e'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='12' fill='white'>Binarisation</text></svg>" alt="Miniature binarisation" data-full="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%2300509e'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='30' fill='white'>Capture 2 – Binarisation</text></svg>">
-          <img src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='220' height='120'><rect width='100%' height='100%' fill='%235b6675'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='12' fill='white'>Résultats</text></svg>" alt="Miniature résultats" data-full="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%235b6675'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='30' fill='white'>Capture 3 – Résultats</text></svg>">
-        </div>
+
       </div>
     </div>
   </div>
@@ -275,4 +284,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
