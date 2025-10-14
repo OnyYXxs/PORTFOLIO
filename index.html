@@ -254,23 +254,32 @@
       <h3 id="modal-project2-title">Recherche dans un mot mêlé</h3>
       <p>Analyse d’image, binarisation et OCR en C pour détecter des mots dans une grille. Optimisations algorithmiques et gestion de la précision.</p>
       <div class="gallery" data-gallery>
-        <div class="gallery" data-gallery>
-          <div class="gallery-main">
-            <img src="assets/level_1_image_1.png" alt="Capture originale du mot mêlé" />
-          </div>
-          <div class="gallery-thumbs">
+        <div class="gallery-main">
+          <figure>
+            <img src="assets/level_1_image_1.png" alt="Image initiale du mot mêlé">
+            <figcaption>Image initiale</figcaption>
+          </figure>
+        </div>
+      
+        <div class="gallery-thumbs">
+          <figure>
             <img class="is-active"
                  src="assets/level_1_image_1.png"
                  alt="Miniature image originale"
                  data-full="assets/level_1_image_1.png">
+            <figcaption>Image initiale</figcaption>
+          </figure>
+      
+          <figure>
             <img
                  src="assets/level_1_image_binarized.png"
                  alt="Miniature image binarisée"
                  data-full="assets/level_1_image_binarized.png">
-          </div>
+            <figcaption>Après prétraitement et binarisation</figcaption>
+          </figure>
         </div>
-
       </div>
+
     </div>
   </div>
 
@@ -284,5 +293,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
